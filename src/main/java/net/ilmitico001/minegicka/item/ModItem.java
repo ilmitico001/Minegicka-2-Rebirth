@@ -12,6 +12,7 @@ public class ModItem {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Minegicka.MOD_ID);
 
     public static final DeferredItem<Item> TORRISIBACIAMI = ITEMS.registerItem("torrisibaciami",Item::new, new Item.Properties());
+    public static final DeferredItem<Item> ZIO_PERA = ITEMS.registerItem("zio_pera",Item::new, new Item.Properties());
 
 
 

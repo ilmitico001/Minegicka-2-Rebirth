@@ -63,6 +63,8 @@ public class Minegicka {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItem.TORRISIBACIAMI);
+            event.accept(ModItem.ZIO_PERA);
+
         }
     }
 
