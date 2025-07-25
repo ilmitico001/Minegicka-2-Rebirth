@@ -1,22 +1,21 @@
 package net.ilmitico001.minegicka;
 
-import net.ilmitico001.minegicka.item.ModItem;
-import net.minecraft.world.item.CreativeModeTabs;
-import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
+import net.ilmitico001.minegicka.block.ModBlocks;
+import net.ilmitico001.minegicka.item.ModCreativeModTabs;
+import net.ilmitico001.minegicka.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Minegicka.MOD_ID)
@@ -37,7 +36,19 @@ public class Minegicka {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItem.register(modEventBus);
+
+        ModCreativeModTabs.register(modEventBus);
+
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
+
+
+
+
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -61,11 +72,18 @@ public class Minegicka {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItem.TORRISIBACIAMI);
-            event.accept(ModItem.ZIO_PERA);
+        /*if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.TORRISIBACIAMI);
+            event.accept(ModItems.ZIO_PERA);
 
         }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TORRISIBACIAMI_BLOCK);
+            event.accept(ModBlocks.ZIO_PERA_BLOCK);
+            event.accept(ModBlocks.MYTHRIL_ORE);
+
+        }*/
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
