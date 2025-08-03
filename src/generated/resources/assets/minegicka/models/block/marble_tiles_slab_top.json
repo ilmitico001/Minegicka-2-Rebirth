@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "minegicka:block/marble_tiles",
+    "side": "minegicka:block/marble_tiles",
+    "top": "minegicka:block/marble_tiles"
+  }
+}

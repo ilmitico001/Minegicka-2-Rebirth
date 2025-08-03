@@ -1,0 +1,4 @@
+// 1.21.7	2025-08-03T11:50:05.3663834	Tags for minecraft:block mod id minegicka
+77546ed1b676d6a02411fdb9c622d99a7450f496 data/minecraft/tags/block/mineable/pickaxe.json
+264ba4ae30094444ee8b2be8d2e7f4cac89803ee data/minecraft/tags/block/needs_iron_tool.json
+20debd86cf59f23644397a7e8999e8c4e9ade5a5 data/minecraft/tags/block/walls.json

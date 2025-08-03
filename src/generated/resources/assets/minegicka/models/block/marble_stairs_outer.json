@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "minegicka:block/marble",
+    "side": "minegicka:block/marble",
+    "top": "minegicka:block/marble"
+  }
+}

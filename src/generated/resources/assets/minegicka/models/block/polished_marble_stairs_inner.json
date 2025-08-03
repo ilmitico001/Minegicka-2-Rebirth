@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "minegicka:block/polished_marble",
+    "side": "minegicka:block/polished_marble",
+    "top": "minegicka:block/polished_marble"
+  }
+}

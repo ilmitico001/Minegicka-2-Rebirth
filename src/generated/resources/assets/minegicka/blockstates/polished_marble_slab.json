@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minegicka:block/polished_marble_slab"
+    },
+    "type=double": {
+      "model": "minegicka:block/polished_marble"
+    },
+    "type=top": {
+      "model": "minegicka:block/polished_marble_slab_top"
+    }
+  }
+}

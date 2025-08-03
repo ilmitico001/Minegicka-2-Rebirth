@@ -1,0 +1,23 @@
+{
+  "values": [
+    "minegicka:mythril_ore",
+    "minegicka:raw_mythril_block",
+    "minegicka:mythril_block",
+    "minegicka:marble",
+    "minegicka:marble_slab",
+    "minegicka:marble_stairs",
+    "minegicka:marble_wall",
+    "minegicka:polished_marble",
+    "minegicka:polished_marble_slab",
+    "minegicka:polished_marble_stairs",
+    "minegicka:polished_marble_wall",
+    "minegicka:marble_bricks",
+    "minegicka:marble_bricks_slab",
+    "minegicka:marble_bricks_stairs",
+    "minegicka:marble_bricks_wall",
+    "minegicka:marble_tiles",
+    "minegicka:marble_tiles_slab",
+    "minegicka:marble_tiles_stairs",
+    "minegicka:marble_tiles_wall"
+  ]
+}
