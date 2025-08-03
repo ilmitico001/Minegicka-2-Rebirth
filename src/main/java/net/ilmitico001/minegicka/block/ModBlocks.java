@@ -4,9 +4,7 @@ package net.ilmitico001.minegicka.block;
 import net.ilmitico001.minegicka.Minegicka;
 import net.ilmitico001.minegicka.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -24,41 +22,6 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Minegicka.MOD_ID);
 
 
-
-
-
-
-
-
-   /* public static final DeferredBlock<Block> TORRISIBACIAMI_BLOCK = BLOCKS.register(
-            "torrisibaciami_block",
-            registryName -> new Block(BlockBehaviour.Properties.of()
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
-                    .destroyTime(2.0f)
-                    .explosionResistance(10.0f)
-                    .sound(SoundType.GRAVEL)
-                    .lightLevel(state -> 7)
-
-    ));*/
-    public static final DeferredBlock<Block> TORRISIBACIAMI_BLOCK = registerBlock(
-            "torrisibaciami_block",
-            Block::new,
-            BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.AMETHYST)
-
-
-    );
-
-    public static final DeferredBlock<Block> ZIO_PERA_BLOCK = registerBlock(
-            "zio_pera_block",
-            Block::new,
-            BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-
-
-    );
 
     public static final DeferredBlock<Block> MYTHRIL_ORE = registerBlock(
             "mythril_ore",
@@ -93,11 +56,26 @@ public class ModBlocks {
                     .sound(SoundType.METAL)
     );
 
+    public static final DeferredBlock<Block> MARBLE = registerBlock("marble", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE));
+    public static final DeferredBlock<StairBlock> MARBLE_STAIRS = registerBlock("marble_stairs", properties -> new StairBlock(MARBLE.get().defaultBlockState(), properties), BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE));
+    public static final DeferredBlock<SlabBlock> MARBLE_SLAB = registerBlock("marble_slab", SlabBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE));
+    public static final DeferredBlock<WallBlock> MARBLE_WALL = registerBlock("marble_wall", WallBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE));
 
 
+    public static final DeferredBlock<Block> POLISHED_MARBLE = registerBlock("polished_marble", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.POLISHED_DEEPSLATE));
+    public static final DeferredBlock<StairBlock> POLISHED_MARBLE_STAIRS = registerBlock("polished_marble_stairs", properties -> new StairBlock(POLISHED_MARBLE.get().defaultBlockState(), properties), BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.POLISHED_DEEPSLATE));
+    public static final DeferredBlock<SlabBlock> POLISHED_MARBLE_SLAB = registerBlock("polished_marble_slab", SlabBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.POLISHED_DEEPSLATE));
+    public static final DeferredBlock<WallBlock> POLISHED_MARBLE_WALL = registerBlock("polished_marble_wall", WallBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.POLISHED_DEEPSLATE));
 
+    public static final DeferredBlock<Block> MARBLE_BRICKS = registerBlock("marble_bricks", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_BRICKS));
+    public static final DeferredBlock<StairBlock> MARBLE_BRICKS_STAIRS = registerBlock("marble_bricks_stairs", properties -> new StairBlock(MARBLE_BRICKS.get().defaultBlockState(), properties), BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_BRICKS));
+    public static final DeferredBlock<SlabBlock> MARBLE_BRICKS_SLAB = registerBlock("marble_bricks_slab", SlabBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_BRICKS));
+    public static final DeferredBlock<WallBlock> MARBLE_BRICKS_WALL = registerBlock("marble_bricks_wall", WallBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_BRICKS));
 
-
+    public static final DeferredBlock<Block> MARBLE_TILES = registerBlock("marble_tiles", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_TILES));
+    public static final DeferredBlock<StairBlock> MARBLE_TILES_STAIRS = registerBlock("marble_tiles_stairs", properties -> new StairBlock(MARBLE_TILES.get().defaultBlockState(), properties), BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_TILES));
+    public static final DeferredBlock<SlabBlock> MARBLE_TILES_SLAB = registerBlock("marble_tiles_slab", SlabBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_TILES));
+    public static final DeferredBlock<WallBlock> MARBLE_TILES_WALL = registerBlock("marble_tiles_wall", WallBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_TILES));
 
 
 

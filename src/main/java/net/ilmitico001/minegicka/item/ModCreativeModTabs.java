@@ -17,10 +17,9 @@ public class ModCreativeModTabs {
 
     public static final Supplier<CreativeModeTab> MINEGICKA_ITEMS_TAB = CREATIVE_MODE_TAB.register("creative_mode_tab_items",() -> CreativeModeTab.builder()
         .title(Component.translatable("creativetab."+Minegicka.MOD_ID+".creative_mode_tab_items"))
-        .icon( () -> new ItemStack(ModItems.ZIO_PERA.get() ) )
+        .icon( () -> new ItemStack(ModItems.WAND.get() ) )
         .displayItems((itemDisplayParameters, output) -> {
-            output.accept(ModItems.TORRISIBACIAMI.get());
-            output.accept(ModItems.ZIO_PERA.get());
+
             output.accept(ModItems.RAW_MYTHRIL.get());
             output.accept(ModItems.MYTHRIL_INGOT.get());
             output.accept(ModItems.FIERY_COAL.get());
@@ -33,13 +32,27 @@ public class ModCreativeModTabs {
 
     public static final Supplier<CreativeModeTab> MINEGICKA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("creative_mode_tab_blocks",() -> CreativeModeTab.builder()
             .title(Component.translatable("creativetab."+Minegicka.MOD_ID+".creative_mode_tab_blocks"))
-            .icon( () -> new ItemStack(ModBlocks.ZIO_PERA_BLOCK.get() ) )
+            .icon( () -> new ItemStack(ModBlocks.MARBLE.get() ) )
             .displayItems((itemDisplayParameters, output) -> {
-                output.accept(ModBlocks.TORRISIBACIAMI_BLOCK.get());
-                output.accept(ModBlocks.ZIO_PERA_BLOCK.get());
                 output.accept(ModBlocks.MYTHRIL_ORE.get());
                 output.accept(ModBlocks.RAW_MYTHRIL_BLOCK.get());
                 output.accept(ModBlocks.MYTHRIL_BLOCK.get());
+                output.accept(ModBlocks.MARBLE.get());
+                output.accept(ModBlocks.MARBLE_SLAB.get());
+                output.accept(ModBlocks.MARBLE_STAIRS.get());
+                output.accept(ModBlocks.MARBLE_WALL.get());
+                output.accept(ModBlocks.POLISHED_MARBLE.get());
+                output.accept(ModBlocks.POLISHED_MARBLE_SLAB.get());
+                output.accept(ModBlocks.POLISHED_MARBLE_STAIRS.get());
+                output.accept(ModBlocks.POLISHED_MARBLE_WALL.get());
+                output.accept(ModBlocks.MARBLE_BRICKS.get());
+                output.accept(ModBlocks.MARBLE_BRICKS_SLAB.get());
+                output.accept(ModBlocks.MARBLE_BRICKS_STAIRS.get());
+                output.accept(ModBlocks.MARBLE_BRICKS_WALL.get());
+                output.accept(ModBlocks.MARBLE_TILES.get());
+                output.accept(ModBlocks.MARBLE_TILES_SLAB.get());
+                output.accept(ModBlocks.MARBLE_TILES_STAIRS.get());
+                output.accept(ModBlocks.MARBLE_TILES_WALL.get());
 
 
 

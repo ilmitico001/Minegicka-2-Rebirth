@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "minegicka:block/zio_pera_block"
-  }
-}

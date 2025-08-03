@@ -16,6 +16,37 @@
   "block.minegicka.raw_mythril_block": "Block of Raw Mythril",
   "block.minegicka.mythril_block": "Block of Mythril",
 
+
+  "block.minegicka.marble": "Marble",
+  "block.minegicka.marble_slab": "Marble Slab",
+  "block.minegicka.marble_stairs": "Marble Stairs",
+  "block.minegicka.marble_wall": "Marble Wall",
+  "block.minegicka.polished_marble": "Polished Marble",
+  "block.minegicka.polished_marble_slab": "Polished Marble Slab",
+  "block.minegicka.polished_marble_stairs": "Polished Marble Stairs",
+  "block.minegicka.polished_marble_wall": "Polished Marble Wall",
+  "block.minegicka.marble_bricks": "Marble Bricks",
+  "block.minegicka.marble_bricks_slab": "Marble Bricks Slab",
+  "block.minegicka.marble_bricks_stairs": "Marble Bricks Stairs",
+  "block.minegicka.marble_bricks_wall": "Marble Bricks Wall",
+  "block.minegicka.marble_tiles": "Marble Tiles",
+  "block.minegicka.marble_tiles_slab": "Marble Tiles Slab",
+  "block.minegicka.marble_tiles_stairs": "Marble Tiles Stairs",
+  "block.minegicka.marble_tiles_wall": "Marble Tiles Wall",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "creativetab.minegicka.creative_mode_tab_items" : "Minegicka Items",
   "creativetab.minegicka.creative_mode_tab_blocks" : "Minegicka Blocks"
 }
